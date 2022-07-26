@@ -1,4 +1,3 @@
-import os
 class Stack:
     def __init__(self, size):
         self.size = size
@@ -21,9 +20,8 @@ class Stack:
     def push(self, data):
         if not self.is_full():
             self.top = self.top + 1
-            self.list[self.top] = a
-        else:
-             return 0
+            self.list[self.top] = data
+   
                
     def pop(self):
         if not self.is_empty():
@@ -31,14 +29,12 @@ class Stack:
             v = self.list[self.top]
             del self.list[self.top]
             self.top = self.top - 1
-            return v
+            
             
     def status(self):
          if self.isEmpty() != 1:
             for i in range (0,self.top+1):
                 print(self.list[i])
-        else:
-            return 0
         
 # Do not change the following code
 size, queries = map(int, input().rstrip().split())
