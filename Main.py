@@ -1,9 +1,10 @@
 import os
 class Stack:
     def __init__(self, size):
-        self.top = -1
-        self.items = []
         self.size = size
+        self.top = -1
+        self.items = [] * size
+       
 
     def is_empty(self):
          if self.top == -1 :
@@ -21,17 +22,12 @@ class Stack:
         if not self.is_full():
             self.top = self.top + 1
             self.list[self.top] = a
-            if self.is_Full() == 1:
-                return 1
         else:
              return 0
-                
-            
-
+               
     def pop(self):
         if not self.is_empty():
-            if self.isEmpty() == 1:
-        else:
+            
             v = self.list[self.top]
             del self.list[self.top]
             self.top = self.top - 1
@@ -52,5 +48,5 @@ for line in range(queries):
     if values[0] == 1:
         stack.push(values[1])
     elif values[0] == 2:
-        stack.pop()
+        stack.pop()m
 stack.status()
