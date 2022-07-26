@@ -7,7 +7,7 @@ class Stack:
     def is_empty(self):
          if self.top == -1 :
             return 1
-        else:
+         else:
             return 0
         
     def is_full(self):
@@ -24,11 +24,9 @@ class Stack:
                
     def pop(self):
         if not self.is_empty():
-            
             v = self.list[self.top]
             del self.list[self.top]
             self.top = self.top - 1
-            
             
     def status(self):
          if self.isEmpty() != 1:
