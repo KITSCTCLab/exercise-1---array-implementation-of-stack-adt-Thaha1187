@@ -1,14 +1,18 @@
 import os
 class Stack:
     def __init__(self, size):
+        self.top = 
         self.items = []
         self.size = size
 
     def is_empty(self):
-        # Write code here
-
+         if self.top == -1 :
+            return 1
+        else :
+            return 0
+        
     def is_full(self):
-        # Write code here
+        if self.top = self.size - 1
 
     def push(self, data):
         if not self.is_full():
