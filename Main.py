@@ -19,19 +19,19 @@ class Stack:
     def push(self, data):
         if not self.is_full():
             self.top = self.top + 1
-            self.list[self.top] = data
+            self.items[self.top] = data
    
                
     def pop(self):
         if not self.is_empty():
-            v = self.list[self.top]
-            del self.list[self.top]
+            v = self.items[self.top]
+            del self.items[self.top]
             self.top = self.top - 1
             
     def status(self):
          if self.isEmpty() != 1:
             for i in range (0,self.top+1):
-                print(self.list[i])
+                print(self.items[i])
         
 # Do not change the following code
 size, queries = map(int, input().rstrip().split())
